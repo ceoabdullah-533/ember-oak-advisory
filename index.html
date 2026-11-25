@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Oak Advisory</title>
+<meta name="description" content="Private business advisory for founders and high-net-worth leaders: strategy, marketing, sales and new ideas.">
+<style>
+:root{--bg:#0e0e10;--card:#17171a;--line:#2a2a30;--text:#f3efe8;--mute:#a9a49a;--ember:#e8833a;--gold:#d9b26a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);line-height:1.6}
+h1,h2,h3,button,.tag{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:system-ui,sans-serif;font-weight:700;letter-spacing:.5px}
+.logo span{color:var(--ember)}
+.btn{display:inline-block;background:var(--ember);color:#111;border:0;padding:13px 22px;border-radius:8px;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(32px,7vw,56px);line-height:1.1;margin-bottom:16px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:var(--mute);font-size:18px;max-width:600px;margin-bottom:26px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:22px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:18px;margin-bottom:6px;color:var(--gold)}
+.card p{color:var(--mute);font-size:15px}
+.tag{display:inline-block;font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mute);margin-top:10px}
+.soon{opacity:.75;border-style:dashed}
+.price{font-size:40px;font-family:system-ui,sans-serif;font-weight:700}
+.price small{font-size:16px;color:var(--mute);font-weight:400}
+ul.ticks{list-style:none;margin:14px 0 20px}
+ul.ticks li{padding:5px 0 5px 24px;position:relative;color:var(--mute)}
+ul.ticks li:before{content:"✓";position:absolute;left:0;color:var(--ember)}
+.premium{border-color:var(--ember)}
+#chat{height:260px;overflow-y:auto;background:#101012;border:1px solid var(--line);border-radius:10px;padding:14px;margin:14px 0;font-size:15px}
+.msg{margin-bottom:10px}.msg b{color:var(--gold);font-family:system-ui,sans-serif;font-size:13px}
+.row{display:flex;gap:8px}
+input[type=text]{flex:1;background:#101012;border:1px solid var(--line);color:var(--text);padding:12px;border-radius:8px;font-size:16px}
+.lock{position:relative}
+.overlay{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--mute);margin-top:6px}
+form.contact{display:grid;gap:10px;max-width:520px}
+textarea{background:#101012;border:1px solid var(--line);color:var(--text);padding:12px;border-radius:8px;font-size:16px;min-height:110px;font-family:inherit}
+footer{padding:32px 0 50px;border-top:1px solid var(--line);color:var(--mute);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">EMBER <span>OAK</span> ADVISORY</div><a class="btn ghost" href="#premium">Join Premium</a></nav>
+
+<header class="hero">
+<h1>Private advisory for leaders who <em>decide fast</em> and can’t afford noise.</h1>
+<p>Clear strategy, sharper marketing and sales, and a steady flow of new ideas — delivered directly, with an AI assistant built for your business.</p>
+<a class="btn" href="#premium">Become a member</a>
+</header>
+
+<section id="problems">
+<h2>The five problems we solve</h2>
+<p class="sub">Founders and business owners tell us the same things.</p>
+<div class="grid">
+<div class="card"><h3>1. Lack of time</h3><p>Too many decisions, too little time. We give you short, clear summaries and a recommended next step.</p></div>
+<div class="card"><h3>2. The trust problem</h3><p>Everyone wants something from you. You get honest, independent advice with no hidden agenda.</p></div>
+<div class="card"><h3>3. Business growth</h3><p>New markets, better offers, a stronger team. We help you plan and execute growth.</p></div>
+<div class="card"><h3>4. Deal flow</h3><p>Finding and screening good opportunities and partnerships worth your attention.</p></div>
+<div class="card"><h3>5. Privacy &amp; reputation</h3><p>Protecting your name and your information while you build your public presence.</p></div>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<p class="sub">What we deliver today, and what is coming.</p>
+<div class="grid">
+<div class="card"><h3>Marketing</h3><p>Positioning, brand story, content and campaigns that attract the right customers.</p><span class="tag">Available now</span></div>
+<div class="card"><h3>Sales</h3><p>Offers, funnels and outreach systems that turn interest into revenue.</p><span class="tag">Available now</span></div>
+<div class="card"><h3>New ideas</h3><p>Screening and shaping new business ideas, with market research behind them.</p><span class="tag">Available now</span></div>
+<div class="card soon"><h3>Investing</h3><p>Investment services require licensing in each country. We will launch this only with the proper licences.</p><span class="tag">Coming soon</span></div>
+</div>
+</section>
+
+<section id="premium">
+<h2>Premium membership</h2>
+<p class="sub">One plan, everything unlocked.</p>
+<div class="card premium">
+<div class="price">$99 <small>/ month</small></div>
+<ul class="ticks">
+<li>Direct contact with us by email and WhatsApp</li>
+<li>Monthly strategy report for your business</li>
+<li>One confirmed one-on-one call each month</li>
+<li>AI advisor with its full power, available 24/7</li>
+<li>Monthly AI credits included. When they run out, renew Premium for the next month</li>
+<li>Priority replies on your issues</li>
+</ul>
+<!-- TODO: replace with your Stripe / Lemon Squeezy / Paddle payment link -->
+<p class="sub" style="margin-bottom:14px">Monthly plan. Not a one-time purchase: each month you renew to keep your credits and full-power AI.</p>
+<a class="btn" id="payLink" href="#contact">Join Premium</a>
+</div>
+</section>
+
+<section id="bot">
+<h2>Your AI advisor</h2>
+<p class="sub">Everyone gets 3 free questions per day. Premium members get the AI at its full power, with monthly credits.</p>
+<div class="card lock" id="botCard">
+<div id="chat"><div class="msg"><b>Ember Oak AI</b><br>Hello. Tell me about your business and the issue you want to solve.</div></div>
+<div class="row"><input type="text" id="q" placeholder="Ask about marketing, sales or ideas…"><button class="btn" id="send">Send</button></div>
+<div class="overlay"><strong>Free: 3 questions a day. Premium: full power</strong><a class="btn" href="#premium">Join Premium for full power</a>
+<!-- Remove this preview link before going live -->
+<a href="#bot" id="preview" style="font-size:13px;color:#a9a49a">Preview member mode (testing, remove before launch)</a></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p class="sub">Members can reach us directly. Everyone else, send a note.</p>
+<form class="contact" action="mailto:your@email.com" method="post" enctype="text/plain">
+<input type="text" name="name" placeholder="Your name">
+<input type="text" name="email" placeholder="Your email">
+<textarea name="issue" placeholder="Describe your issue"></textarea>
+<button class="btn" type="submit">Send message</button>
+</form>
+<p class="sub" style="margin-top:14px">Email: your@email.com · WhatsApp: +92 000 0000000</p>
+</section>
+
+<footer>© Ember Oak Advisory. Educational and business consulting only. Nothing on this site is financial, investment, legal or tax advice, and we do not manage client funds. Results are not guaranteed.</footer>
+</div>
+
+<script>
+var chat=document.getElementById('chat'),q=document.getElementById('q'),card=document.getElementById('botCard');
+card.classList.add('locked'); /* locked = free mode. Real premium status must come from login + payment on the server */
+document.getElementById('preview').onclick=function(){card.classList.remove('locked')};
+function add(who,text){var d=document.createElement('div');d.className='msg';var b=document.createElement('b');b.textContent=who;d.appendChild(b);d.appendChild(document.createElement('br'));d.appendChild(document.createTextNode(text));chat.appendChild(d);chat.scrollTop=chat.scrollHeight}
+var FREE_LIMIT=3;
+function usedToday(){var k='eo_'+new Date().toDateString();return parseInt(localStorage.getItem(k)||'0',10)}
+function bump(){var k='eo_'+new Date().toDateString();localStorage.setItem(k,usedToday()+1)}
+async function send(){
+  var t=q.value.trim();if(!t)return;
+  var isPremium=!card.classList.contains('locked');
+  if(!isPremium&&usedToday()>=FREE_LIMIT){add('Ember Oak AI','You have used your 3 free questions for today. Join Premium for the full-power AI and monthly credits.');return}
+  if(!isPremium)bump();
+  add('You',t);q.value='';
+  try{
+    // Needs the /api/chat serverless function (next step). Never put your API key in this file.
+    var hdr={'Content-Type':'application/json'};var pc=sessionStorage.getItem('eo_pc');if(pc)hdr['x-premium-code']=pc;
+    var r=await fetch('/api/chat',{method:'POST',headers:hdr,body:JSON.stringify({message:t})});
+    if(!r.ok)throw new Error('x');
+    var j=await r.json();add('Ember Oak AI',j.reply)
+  }catch(e){add('Ember Oak AI','The AI backend is not connected yet. It will answer here once the server step is added.')}
+}
+document.getElementById('send').onclick=send;
+q.addEventListener('keydown',function(e){if(e.key==='Enter')send()});
+</script>
+</body>
+</html>
