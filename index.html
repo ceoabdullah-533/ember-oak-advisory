@@ -126,6 +126,12 @@ footer{padding:32px 0 50px;border-top:1px solid var(--line);color:var(--mute);fo
 <footer>© Ember Oak Advisory. Educational and business consulting only. Nothing on this site is financial, investment, legal or tax advice, and we do not manage client funds. Results are not guaranteed.</footer>
 </div>
 
+<script type="module">
+// Initialize Vercel Web Analytics
+import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@2.0.1/dist/index.mjs';
+inject();
+</script>
+
 <script>
 var chat=document.getElementById('chat'),q=document.getElementById('q'),card=document.getElementById('botCard');
 card.classList.add('locked'); /* locked = free mode. Real premium status must come from login + payment on the server */
